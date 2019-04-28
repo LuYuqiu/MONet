@@ -48,7 +48,7 @@ void FlowAugmentationLayer<Dtype>::Reshape(const vector<Blob<Dtype>*>& bottom,
   //const int height = bottom[0]->height();
   //const int width = bottom[0]->width();
 
-  CHECK_EQ(channels, 2) << "Flow data must have two channels";
+  CHECK_EQ(channels, 3) << "Flow data must have three channels";
 
   cropped_width_ = this->layer_param_.augmentation_param().crop_width();
   cropped_height_ = this->layer_param_.augmentation_param().crop_height();

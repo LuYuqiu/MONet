@@ -1,4 +1,4 @@
-net: "/home/user/Luyuqiu/flownet2/selfmodels/ObjectNet-SD/ObjectNet-SD_train_test.prototxt"
+net: "ObjectNet-SD_train_test.prototxt"
 test_iter: 600
 test_interval: 4800
 base_lr: 0.00001
@@ -12,7 +12,7 @@ momentum: 0.9
 weight_decay: 0.0004
 max_iter:  240000
 snapshot: 4800
-snapshot_prefix: "flow"
+snapshot_prefix: "MON_SD"
 solver_mode: GPU
 solver_type: ADAM
 momentum2: 0.999

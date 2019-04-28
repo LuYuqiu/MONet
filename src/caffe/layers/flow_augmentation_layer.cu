@@ -100,7 +100,7 @@ void FlowAugmentationLayer<Dtype>::Forward_gpu(const vector<Blob<Dtype>*>& botto
   int topchannels = (top)[0]->channels();
   int topcount = (top)[0]->count();
   
-  CHECK_EQ(topchannels, 2);
+  CHECK_EQ(topchannels, 3);
   
   
   const Dtype* bottom_data = bottom[0]->gpu_data(); // source
@@ -111,7 +111,7 @@ void FlowAugmentationLayer<Dtype>::Forward_gpu(const vector<Blob<Dtype>*>& botto
   
   int num = (bottom)[0]->num();
   
-  CHECK_EQ(bottomchannels, 2);
+  CHECK_EQ(bottomchannels, 3);
   CHECK_EQ((bottom)[0]->num(), (top)[0]->num());
   
   // Debug: check for NaNs and lare values:    
