@@ -1,0 +1,14 @@
+net: "ObjectNet-sc2_train.prototxt"
+test_iter: 360
+test_interval: 720
+base_lr: 0.0001
+lr_policy: "fixed"
+momentum: 0.9
+weight_decay: 0.0005
+max_iter:  7200
+snapshot: 720
+snapshot_prefix: "MON_SD/"
+solver_mode: GPU
+solver_type: ADAM
+momentum2: 0.999
+display: 50 
